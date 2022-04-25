@@ -44,6 +44,7 @@ bool Node::addNeighbor(Node *node, int cost) {
     // neighbor to cost
     name2Neighbor.at(node->getName()) = node;
     neighbor2cost.at(node) = cost;
+    return true;
 }
 
 Node::~Node() {

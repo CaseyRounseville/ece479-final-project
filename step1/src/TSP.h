@@ -1,6 +1,8 @@
 #ifndef TSP_H
 #define TSP_H
 
+#include "Graph.h"
+
 #include <vector>
 
 struct TSPResult {
@@ -8,6 +10,6 @@ struct TSPResult {
     std::vector<char> path;
 };
 
-struct TSPResult tsp(char startName);
+struct TSPResult tsp(Graph *graph, char startName);
 
 #endif
